@@ -71,26 +71,6 @@ npm run build
 ```
 This will create a `dist` directory with the optimized production assets.
 
-### Deploying to Vercel (Recommended)
-
-1. Push your code to a GitHub repository.
-2. Log into [Vercel](https://vercel.com/) and click "New Project".
-3. Import your GitHub repository.
-4. Vercel will automatically detect the Vite preset.
-   - Build Command: `npm run build`
-   - Output Directory: `dist`
-5. Click **Deploy**.
-
-### Deploying to Netlify
-
-1. Push your code to a GitHub repository.
-2. Log into [Netlify](https://www.netlify.com/) and click "Add new site" -> "Import an existing project".
-3. Connect your GitHub account and select the repository.
-4. Set the build settings:
-   - Base directory: `/`
-   - Build command: `npm run build`
-   - Publish directory: `dist`
-5. Click **Deploy site**.
 
 ## 📸 Screenshots
 
@@ -104,4 +84,3 @@ This will create a `dist` directory with the optimized production assets.
 ![Product Detail](https://via.placeholder.com/800x450?text=Product+Detail+Screenshot)
 
 ---
-*Built with ❤️ for a modern web experience.*
