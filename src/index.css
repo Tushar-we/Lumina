@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #111827;
+  --color-primary-light: #1f2937;
+  --color-accent: #3b82f6;
+  --color-accent-hover: #2563eb;
+  --color-bg-light: #f9fafb;
+  --color-bg-dark: #030712;
+  
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-heading: 'Outfit', system-ui, sans-serif;
+}
+
+@layer base {
+  :root {
+    --bg-color: var(--color-bg-light);
+    --text-color: #111827;
+    --card-bg: #ffffff;
+    --border-color: #e5e7eb;
+  }
+  
+  .dark {
+    --bg-color: var(--color-bg-dark);
+    --text-color: #f9fafb;
+    --card-bg: #111827;
+    --border-color: #374151;
+  }
+
+  body {
+    @apply bg-[var(--bg-color)] text-[var(--text-color)] font-sans antialiased transition-colors duration-300;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading tracking-tight;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/70 dark:bg-black/50 backdrop-blur-md border border-white/20 dark:border-white/10 shadow-lg;
+  }
+  
+  .glass-card {
+    @apply bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm border border-gray-200/50 dark:border-gray-800/50 shadow-xl rounded-2xl;
+  }
+  
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400;
+  }
+}
